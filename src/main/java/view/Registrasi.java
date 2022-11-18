@@ -93,7 +93,7 @@ public class Registrasi {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         insert = new JButton("Insert Data");
-            insert.setBounds(250, 610, 100, 30);
+            insert.setBounds(100, 200, 100, 30);
             insert.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -101,7 +101,7 @@ public class Registrasi {
                 }
             });
         JButton back = new JButton("Kembali");
-        back.setBounds(100, 200, 180, 50);
+        back.setBounds(100, 500, 180, 50);
         back.setFont(font1);
         back.setCursor(new Cursor(Cursor.HAND_CURSOR));
         back.addActionListener(new ActionListener(){
@@ -117,6 +117,13 @@ public class Registrasi {
         panel.add(Lpass);
         panel.add(Lcategory);
         panel.add(Lgender);
+        panel.add(TFusername);
+        panel.add(TFpass);
+        panel.add(TFemail);
+        panel.add(radioButtonPria);
+        panel.add(radioButtonWanita);
         frame.add(panel);
+        panel.add(insert);
+        panel.add(back);
     }
 }
