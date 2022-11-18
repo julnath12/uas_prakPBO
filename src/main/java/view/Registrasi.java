@@ -91,13 +91,6 @@ public class Registrasi {
         frame.setLayout(null);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
-        panel.add(labelJudul);
-        panel.add(Lusername);
-        panel.add(Lemail);
-        panel.add(Lpass);
-        panel.add(Lcategory);
-        panel.add(Lgender);
 
         insert = new JButton("Insert Data");
             insert.setBounds(250, 610, 100, 30);
@@ -118,5 +111,11 @@ public class Registrasi {
                 new menuUtama();
             } 
         });
+        panel.add(labelJudul);
+        panel.add(Lusername);
+        panel.add(Lemail);
+        panel.add(Lpass);
+        panel.add(Lcategory);
+        panel.add(Lgender);
     }
 }
