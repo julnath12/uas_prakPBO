@@ -20,7 +20,7 @@ public class Login {
         conn.connect();
         try {
             java.sql.Statement stat = conn.con.createStatement();
-            ResultSet result = stat.executeQuery("select * from user where username='" + userName + "'");
+            ResultSet result = stat.executeQuery("select * from user where userName='" + userName + "'");
 
             if (result.next()) {
                 if (pass.equals(result.getString("pass"))) {
