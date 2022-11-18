@@ -117,5 +117,6 @@ public class Registrasi {
         panel.add(Lpass);
         panel.add(Lcategory);
         panel.add(Lgender);
+        frame.add(panel);
     }
 }
